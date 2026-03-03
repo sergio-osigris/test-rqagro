@@ -91,3 +91,5 @@ if filas:
     print(f"✅ Inserción completa. Total filas insertadas: {total}")
 else:
     print("No hay filas válidas para insertar.")
+
+os.remove('jsonFormateado_semana-'+str(int(datetime.datetime.now().strftime("%U"))+1)+'.json')

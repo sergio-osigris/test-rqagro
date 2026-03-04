@@ -19,4 +19,4 @@ else:
 s3_client = s3_session.client("s3")
 
 # Subir archivo log a s3
-s3_client.upload_file(ROOT_DIR / "rqagro_weekly.log", "infoserver-file-bucket", "rqagro_weekly.log")
+s3_client.upload_file(ROOT_DIR / "rqagro_weekly.log", "master-file-bucket", "rqagro_weekly.log")
